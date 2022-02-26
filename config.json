@@ -1,0 +1,8 @@
+{
+    "merger_parent_directory": "X:\\Downloads\\To_Be_Aggregated",
+    "merger_output_directory": "X:\\Downloads\\Combined",
+    "formatter_parent_directory": "X:\\Downloads\\Combined",
+    "plex_directory": "X:\\Audiobooks",
+    "delete_source_files": false,
+    "google_api_key": "AIzaSyDfxgMFuzQPZUhIsf11HREZmcTsxC3W9r4"
+}
