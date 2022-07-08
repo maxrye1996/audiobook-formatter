@@ -2,6 +2,7 @@ import os
 import re
 import requests
 import urllib
+import shutil
 from json import load
 from mutagen.easyid3 import EasyID3
 
@@ -82,6 +83,7 @@ for book in target_files:
         audio["title"] = title
         audio["album"] = title
         audio["artist"] = artist
+        audio["tracknumber"] = "1"
 
         print("Completed book: " + title + ", " + artist)
         audio.save()
@@ -92,12 +94,14 @@ for book in target_files:
             if os.path.isfile(output_dir + "\\" + book):
                 print("we already have the book " + output_dir + "\\" + book)
             else:
-                os.rename(book, output_dir + "\\" + book)
+                # os.rename(book, output_dir + "\\" + book)
+                shutil.move(book, output_dir + "\\" + book)
                 print("moved book: " + book + " to existing dir : " + output_dir)
 
         else:
             os.mkdir(output_dir)
-            os.rename(book, output_dir + "\\" + book)
+            # os.rename(book, output_dir + "\\" + book)
+            shutil.move(book, output_dir + "\\" + book)
             print("created directory: " + output_dir + " and moved book " + book + " into it")
 
     except Exception as e:

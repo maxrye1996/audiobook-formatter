@@ -43,7 +43,8 @@ for dir in target_directories:
                     target_files.remove(file)
 
         # now reorder files in list numerically (using regex because windows sucks)
-        target_files.sort(key=lambda var:[int(x) if x.isdigit() else x for x in re.findall(r'[^0-9]|[0-9]+', var)])
+        print("Sorting current_dir: " + current_dir)
+        target_files.sort(key=lambda var: [int(x) if x.isdigit() else x for x in re.findall(r'[^0-9]|[0-9]+', var)])
 
         # produce command in format:
         # copy /b "dir\file1.mp3" + "dir\file2.mp3" "output_dir\output.mp3"
