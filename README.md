@@ -1,10 +1,10 @@
-# plex-audiobook-formatter
+# readarr_formatter.py:
+- Join chapters
+- make sure books are in sub folders
 
-1) Join separate chapter files. 
-2) Set album name, title and artist using Google Books api. 
-3) Move into plex directory in the format /path_to_plex/Audiobook/Artist/book_title.mp3
+# directory_stats.py:
+- print out useful info on the audiobook dir
 
-# TODO
-1) refactor to main.py with mp3 module, m4b module and formatting module
-2) Add m4b functionality 
-3) Change mp3 library, for some reason it fails on perfectly fine mp3 files?
+# tidy_authors.py:
+- check for authors with similar names
+- 
