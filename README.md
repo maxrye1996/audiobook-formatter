@@ -1,4 +1,4 @@
-## Some scripts i use to improve Audiobook library for AudioBookShelf
+## Some scripts i use to improve Audiobook library for AudioBookShelf / PLEX / Readarr
 
 ## audiobook_formatter.py:
 1) Joins chapters of book into one file
