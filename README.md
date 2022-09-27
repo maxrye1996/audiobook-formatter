@@ -1,10 +1,19 @@
-# plex-audiobook-formatter
+## Some scripts i use to improve Audiobook library for AudioBookShelf
 
-1) Join separate chapter files. 
-2) Set album name, title and artist using Google Books api. 
-3) Move into plex directory in the format /path_to_plex/Audiobook/Artist/book_title.mp3
+## audiobook_formatter.py:
+1) Joins chapters of book into one file
+2) Deletes empty dirs
+3) Deletes anything that isnt an mp3, m4b, m4a
+4) finishes with a book structure of:
+```
+YOUR_AUDIOBOOK_DIR/Author1/Book1/Book1.mp3
 
-# TODO
-1) refactor to main.py with mp3 module, m4b module and formatting module
-2) Add m4b functionality 
-3) Change mp3 library, for some reason it fails on perfectly fine mp3 files?
+YOUR_AUDIOBOOK_DIR/Author1/Book2/Book2.m4b
+
+YOUR_AUDIOBOOK_DIR/Author2/Book1/Book1.m4a
+```
+
+
+## tidy_authors.py:
+- prints authors with similar names (e.g JRR Tolkein and J.R.R Tolkein)
+
