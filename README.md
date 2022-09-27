@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Some scripts i use to improve Audiobook library for AudioBookShelf
 
 ## audiobook_formatter.py:
@@ -17,3 +18,15 @@ YOUR_AUDIOBOOK_DIR/Author2/Book1/Book1.m4a
 ## tidy_authors.py:
 - prints authors with similar names (e.g JRR Tolkein and J.R.R Tolkein)
 
+=======
+# readarr_formatter.py:
+- Join chapters
+- make sure books are in sub folders
+
+# directory_stats.py:
+- print out useful info on the audiobook dir
+
+# tidy_authors.py:
+- check for authors with similar names
+- 
+>>>>>>> 47bb6912feca75c58d2ac05f906a73da3e1298c5
